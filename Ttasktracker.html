@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Tracker</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: #73b8df;
+      font-family: Arial, sans-serif;
+    }
+
+    .tracker {
+      width: (700px);
+      padding: 40px 22px 22px;
+      border-radius: 14px;
+      background: white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+    }
+
+    .task-form {
+      display: flex;
+      align-items: center;
+      height: 76px;
+      margin-bottom: 12px;
+      padding-left: 30px;
+      border-radius: 40px;
+      background: #f1f2f2;
+    }
+
+    .task-form input {
+      flex: 1;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      font-size: 18px;
+    }
+
+    .task-form input::placeholder {
+      color: #888;
+    }
+
+    .add-button {
+      width: 76px;
+      height: 76px;
+      flex: 0 0 76px;
+      border: 0;
+      border-radius: 50%;
+      background: #20d82e;
+      font-size: 42px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .task-list {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .task {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 8px 12px;
+      background: #f0f1f2;
+      font-size: 18px;
+    }
+
+    .task-text {
+      flex: 1;
+      overflow-wrap: anywhere;
+    }
+
+    .task.completed .task-text {
+      text-decoration: line-through;
+    }
+
+    .task button {
+      border: 0;
+      background: transparent;
+      font-size: 26px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .clear-button {
+      display: block;
+      margin: 18px auto 0;
+      padding: 11px 48px;
+      border: 1px solid #aaa;
+      background: #f2f0f0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 500px) {
+      .tracker {
+        padding: 28px 16px 18px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .task-form {
+        height: 62px;
+        padding-left: 18px;
+      }
+
+      .task-form input {
+        font-size: 15px;
+      }
+
+      .add-button {
+        width: 62px;
+        height: 62px;
+        flex-basis: 62px;
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="tracker">
+    <h1>Task Tracker</h1>
+
+    <form class="task-form">
+      <input
+        type="text"
+        placeholder="Start writing and press enter to create task"
+        aria-label="New task"
+      />
+      <button class="add-button" type="submit" aria-label="Add task">←</button>
+    </form>
+
+    <ul class="task-list">
+      <li class="task">
+        <span class="task-text">Clean study desk</span>
+        <button class="complete-button" aria-label="Mark complete">✓</button>
+        <button class="delete-button" aria-label="Delete task">▤</button>
+      </li>
+      <li class="task">
+        <span class="task-text">Water plants</span>
+        <button class="complete-button" aria-label="Mark complete">✓</button>
+        <button class="delete-button" aria-label="Delete task">▤</button>
+      </li>
+      <li class="task completed">
+        <span class="task-text">Go for a walk</span>
+        <button class="complete-button" aria-label="Mark complete">✓</button>
+        <button class="delete-button" aria-label="Delete task">▤</button>
+      </li>
+    </ul>
+
+    <button class="clear-button">Delete task list</button>
+  </main>
+</body>
+</html>

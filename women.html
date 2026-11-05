@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful World</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 24px;
+  background: #fff;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout {
+  width: min(100%, 1080px);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__image {
+  display: block;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.like-button {
+  width: 112px;
+  margin-top: 18px;
+  padding: 11px 16px;
+  border: 0;
+  border-radius: 30px;
+  background: #c99094;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+.like-button span {
+  font-size: 11px;
+}
+
+.content {
+  padding-top: 8px;
+}
+
+h1 {
+  margin: 0 0 38px 58px;
+  font-size: clamp(25px, 3.2vw, 34px);
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.info-card {
+  border: 7px solid #c99094;
+  padding: 25px 58px 24px;
+}
+
+.info-card h2 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.info-card p {
+  max-width: 520px;
+  margin: 0;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    max-width: 500px;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  h1 {
+    margin: 0 0 24px;
+    font-size: clamp(27px, 7vw, 36px);
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .info-card {
+    padding: 22px;
+  }
+}
+</style>
+<body>
+  <main class="layout">
+    <section class="profile">
+      <img class="profile__image" src="women pic.jpg" alt="Woman looking to the side">
+      <button class="like-button" type="button">
+        <span aria-hidden="true">👍</span> LIKE
+      </button>
+    </section>
+
+    <section class="content">
+      <h1>I declare this world is so<br class="desktop-break">
+        beautiful that I can<br class="desktop-break">
+        hardly believe it exists
+      </h1>
+
+      <article class="info-card">
+        <h2>WHAT I DO</h2>
+        <p>
+          Objectively innovate empowered manufactured products
+          whereas parallel platforms. Holistically predominate extensible
+          testing procedures for reliable supply chains. Dramatically
+          engage top-line web services vis-a-vis cutting-edge deliverables.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

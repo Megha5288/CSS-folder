@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050609;
+    color: white;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 25px;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.content {
+    padding: 40px;
+    background-color: black;
+    border-right: 1px solid black;
+}
+
+.logo {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #d9e8f0;
+    margin-bottom: 35px;
+}
+
+.small-heading {
+    font-family: 'Space Mono', monospace;
+    color: #36dce5;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+h1 span,
+h2 span {
+    color: lightblue;
+}
+
+.description {
+    color: lightblue;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    line-height: 1.9;
+    max-width: 400px;
+}
+
+.timer {
+    margin-top: 30px;
+    padding: 15px;
+    border-left: 2px solid lightblue;
+    width: fit-content;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: lightblue;
+}
+
+.timer span {
+    color: #00e5e9;
+    font-weight: bold;
+}
+
+.timer{
+    margin-left: 8px;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding-top: 15px;
+    border-top: 1px solid navy;
+    color: lightblue;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: rgba(4, 6, 12, 0.9);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: #a9b5c2;
+}
+</style>
+<body>
+      <div class="container">
+
+        <!-- First Section -->
+        <section class="hero">
+
+            <div class="content">
+                <h5 class="logo">MACHINA //</h5>
+
+                <p class="small-heading">
+                    — AUTONOMOUS TYPE 04 // SERIES 09
+                </p>
+
+                <h1>
+                    MACHINA <span>//</span><br>
+                    V-9
+                </h1>
+
+                <p class="description">
+                    A 12-cylinder electric system powered by an advanced
+                    neural core. Every line on this page is telemetry.
+                    Scroll to see the twin-turbo details in cinematic
+                    exploration and walk the platform end to end.
+                </p>
+
+                <div class="timer">
+                    SYS.TIME: <span>12:27:47</span>
+                </div>
+            </div>
+
+            <div class="image-box">
+                <img src="https://img.magnific.com/free-vector/realistic-neon-lights-background_52683-59889.jpg" alt="Cyberpunk city">
+                </div>
+            </div>
+ <div class="container">
+        <main class="left-panel">
+            <header class="panel-header">
+                <span class="brand">MACHINA//</span>
+                <div class="system-status">
+                    <span class="line-decorator"></span> SYSTEM 02 // PLATFORM
+                </div>
+            </header>
+
+            <section class="content-body">
+                <h1>BLUEPRINT // CORE</h1>
+                <p class="instruction">
+                    Open a subsystem to interrogate it. The visual track opposite retargets its marker and readout to match your selection.
+                </p>
+                <div class="subsystems-list">
+                    <div class="subsystem-item">
+                        <div class="subsystem-header">
+                            <span class="id">A-01</span> AERODYNAMICS
+                            <span class="icon">+</span>
+                        </div>
+                    </div>
+
+                    <div class="subsystem-item active">
+                        <div class="subsystem-header">
+                            <span class="id">A-02</span> NEURAL CORE
+                            <span class="icon">-</span>
+                        </div>
+                        <div class="subsystem-details">
+                            <p>A 512 TOPS onboard computer reads the chassis sensor mesh 2,000 times per second and rebalances torque across three motors before the driver can feel the shift begin.</p>
+                            <div class="telemetry-footer">
+                                <span>512 TOPS</span>
+                                <span>2,000 HZ</span>
+                                <span>3X VECTOR</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subsystem-item">
+                        <div class="subsystem-header">
+                            <span class="id">A-03</span> BATTERY ARRAY
+                            <span class="icon">+</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-panel"
+            <div class="visual-track">
+                <div class="hud-marker">
+                    <span class="pointer-line"></span>
+                    <div class="hud-box">512 TOPS // 2,000 HZ</div>
+                </div>
+            </div>
+            <footer class="panel-footer">
+                <div class="footer-nav">INTERIOR // DRIVER INTERFACE</div>
+                <div class="footer-action">DIAG</div>
+            </footer>
+        </aside>
+    </div>
+     <div class="interface-container">
+        <section class="media-panel">
+        
+            <div class="media-footer">
+                <span class="footer-left">INTERIOR // ZERO.0 SHELL</span>
+                <span class="footer-right">00:1</span>
+            </div>
+        </section>
+
+        <section class="control-panel">
+            <header class="panel-header">
+                <span class="system-tag">— SYSTEM 03 // MODULES</span>
+                <h1>DRIVE // STACK</h1>
+            </header>
+
+            <main class="info-card">
+                <span class="card-tag">MOD 03 // FLOOR</span>
+                <h2>CELL ARRAY</h2>
+                <p class="card-description">
+                    Solid state cells bonded into the floor as a stressed structural member of the chassis.
+                </p>
+                <div class="metric-display">
+                    <span class="metric-value">118</span>
+                    <span class="metric-unit">KWH</span>
+                </div>
+            </main>
+
+            <footer class="panel-footer">
+                <div class="pagination">
+                    <button class="nav-arrow">&lt;</button>
+                    <span class="page-num">01</span>
+                    <span class="page-num">02</span>
+                    <span class="page-num active">03</span>
+                    <span class="page-num">04</span>
+                    <button class="nav-arrow">&gt;</button>
+                </div>
+    
+            </footer>
+        </section>
+    </div>
+</body>
+</html>

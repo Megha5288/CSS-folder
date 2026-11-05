@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: darkslategrey;
+    }
+  .nav{
+        background-color: blue;
+        display: flex;
+        font-size: 32px;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        padding-left: 400px;
+        padding-right: 400px;
+        text-align: center;
+    }
+
+    .content:hover{
+        background-color: aliceblue;
+    }
+
+    @media(max-width:900px) {
+
+        .nav{
+            display: block;
+     
+        }
+
+        .content:hover{
+            background-color: rgb(27, 27, 102);
+            font-size: 34px;
+            
+        }
+    }
+
+</style>
+<body>
+    <div class="nav">
+        <div class="content">Home</div>
+        <div class="content">About</div>
+        <div class="content">Portfolio</div>
+        <div class="content">Service</div>
+        <div class="content">Contact</div>       
+
+        
+        
+    </div>
+</body>
+</html>

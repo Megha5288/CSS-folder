@@ -1,0 +1,22 @@
+/* h1 -> selector */
+h1{
+    color:blueviolet
+
+}
+/* class */
+
+/* .(dot)class_name */
+
+.main{
+    font-size: 20px;
+    color:aquamarine ;
+}
+
+/* id -> #(has) */
+
+#second{
+
+    color:darkslategrey;
+    background-color: black;
+    
+}
